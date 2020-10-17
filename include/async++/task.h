@@ -375,7 +375,7 @@ public:
 	}
 
 	// Set the result of the task, mark it as completed and run its continuations
-	bool set()
+	bool set() const
 	{
 		return this->set_internal(detail::fake_void());
 	}
